@@ -6,7 +6,9 @@
   "scripts": {
     "build": "webpack --config ./build/webpack.prod.config.js --progress --hide-modules",
     "lint": "eslint --ext js --ext vue src",
-    "test": "jest"
+    "test": "jest",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "repository": {
     "type": "git",
@@ -63,6 +65,7 @@
     "vue-style-loader": "^4.1.2",
     "vue-template-compiler": "^2.6.11",
     "vue-test": "^1.0.0",
+    "vuepress": "^1.5.0",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.11.0",
