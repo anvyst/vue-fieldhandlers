@@ -1,5 +1,5 @@
 {
-  "name": "vue-fieldhandlers",
+  "name": "@anvyst/vue-fieldhandlers",
   "version": "1.0.0",
   "description": "VueJS FieldHandlers collection for Qobo templates",
   "main": "index.js",
@@ -67,5 +67,9 @@
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^4.2.2"
+  },
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
   }
 }
