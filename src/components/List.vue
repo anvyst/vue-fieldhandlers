@@ -25,7 +25,7 @@
       </template>
       <template
         slot="selected-option"
-        scope="option"
+        slot-scope="option"
       >
         <div v-html="option.label" />
       </template>
@@ -35,7 +35,6 @@
 
 <script>
 import vSelect from 'vue-select'
-import 'flag-icon-css/css/flag-icon.min.css'
 
 export default {
   components: {
@@ -101,6 +100,9 @@ export default {
 }
 </script>
 <style lang="css">
+@import '~flag-icon-css/css/flag-icon.min.css';
+@import '~vue-select/dist/vue-select.css';
+
 .v-select .dropdown-toggle {
   border-radius: 0 !important;
   padding: 0 !important;

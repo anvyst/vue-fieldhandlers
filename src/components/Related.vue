@@ -32,7 +32,7 @@
       </template>
       <template
         slot="selected-option"
-        scope="option"
+        slot-scope="option"
       >
         <div class="selected d-center">
           {{ option.label }}

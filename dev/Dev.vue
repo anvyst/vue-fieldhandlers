@@ -113,8 +113,28 @@
     </div>
 
     <div class="row">
-      <div class="col-xs-12 col-md-3">List</div>
-      <div class="col-xs-12 col-md-3">Related</div>
+      <div class="col-xs-12 col-md-3">
+        <ListFieldHandler
+          guid="123-list"
+          field="list_field"
+          label="List Label"
+          :options="listArray"
+          :is-required="true"
+        />
+      </div>
+      <div class="col-xs-12 col-md-3">
+        <RelatedFieldHandler
+          guid="123-related"
+          field="related_field"
+          source="test_source"
+          display-field="test_displayField"
+          :options="relatedArray"
+          label="Related Label"
+          :is-required="true"
+        />
+      </div>
+    </div>
+    <div class="col-xs-12 col-md-3">
     </div>
   </div>
 </template>
@@ -132,6 +152,7 @@ import PhoneFieldHandler from '../src/components/Phone.vue'
 import TextFieldHandler from '../src/components/Text.vue'
 import TimeFieldHandler from '../src/components/Time.vue'
 import UrlFieldHandler from '../src/components/Url.vue'
+import countriesList from '../src/utils/countries.js'
 
 export default {
   components: {
@@ -151,29 +172,18 @@ export default {
   },
   data () {
     return {
-      phoneValue: {},
-      urlValue: {},
-      textValue: {}
+      listArray: [
+        { label: 'One', value: 'one' },
+        { label: 'Two', value: 'two' },
+        { label: 'Three', value: 'three' },
+        { label: '42', value: '42' }
+      ],
+      relatedArray: [],
+      countries: []
     }
   },
-  methods: {
-    showPhoneValue (field, guid, val) {
-      this.phoneValue = {
-        'field': field,
-        'guid': guid,
-        'val': val
-      }
-    },
-    showUrlValue (field, guid, val) {
-      this.urlValue = {
-        'field': field,
-        'guid': guid,
-        'val': val
-      }
-    },
-    showTextValue (field, guid, val) {
-      this.textValue = { 'field': field, 'guid': guid, 'val': val }
-    }
+  created () {
+    console.log(countriesList)
   }
 }
 </script>
