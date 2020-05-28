@@ -1,6 +1,6 @@
 {
   "name": "@anvyst/vue-fieldhandlers",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "VueJS FieldHandlers collection for Qobo templates",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,7 @@
     "plugin",
     "qobo"
   ],
-  "author": "Andrey Vystavkin <andrey.vystavkin@gmail.com>",
+  "author": "Andrey Vystavkin <andrey@7winds.tech>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/anvyst/vue-fieldhandlers/issues"
