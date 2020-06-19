@@ -1,8 +1,8 @@
 {
   "name": "@anvyst/vue-fieldhandlers",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "VueJS FieldHandlers collection for Qobo templates",
-  "main": "index.js",
+  "main": "dist/vue-fieldhandlers.js",
   "scripts": {
     "watch": "webpack-dev-server --config ./build/webpack.dev.config.js --hot --progress -d",
     "build": "webpack --config ./build/webpack.prod.config.js --progress --hide-modules",
