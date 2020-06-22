@@ -58,7 +58,6 @@ export default {
       val: this.value
     }
   },
-
   watch: {
     val () {
       this.$emit('input-value-updated', this.field, this.guid, this.val)
