@@ -1,6 +1,6 @@
 {
   "name": "@anvyst/vue-fieldhandlers",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "VueJS FieldHandlers collection for Qobo templates",
   "main": "dist/vue-fieldhandlers.js",
   "scripts": {
