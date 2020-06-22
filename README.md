@@ -2,6 +2,11 @@
 
 VueJS Field Handlers for Qobo `project-template-cakephp`.
 
+---
+
+![CircleCI](https://img.shields.io/circleci/build/github/anvyst/vue-fieldhandlers/master)
+![npm (scoped)](https://img.shields.io/npm/v/@anvyst/vue-fieldhandlers)
+
 It's a heavy plugin, as it contains some legacy code with jQuery dependencies, like:
 
 * `bootstrap-datepicker`
