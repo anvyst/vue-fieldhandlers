@@ -14,15 +14,16 @@
       :id="guid"
       v-model="val"
       :class="[size]"
-      type="tel"
+      type="number"
+      max="99999999999"
+      step="1"
       class="form-control"
     >
   </div>
 </template>
-
 <script>
-
 export default {
+  name: 'IntegerInput',
   props: {
     field: {
       type: String,

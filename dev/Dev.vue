@@ -2,7 +2,7 @@
   <div id="app">
     <div class="row">
       <div class="col-xs-12 col-md-3">
-        <UrlFieldHandler
+        <UrlInput
           field="url_field"
           guid="123_url"
           value="https://google.com"
@@ -12,7 +12,7 @@
       </div>
 
       <div class="col-xs-12 col-md-3">
-        <TimeFieldHandler
+        <TimeInput
           field="time_field"
           value="2020-05-15 09:00:00"
           guid="123-time"
@@ -22,7 +22,7 @@
       </div>
 
       <div class="col-xs-12 col-md-3">
-        <TextFieldHandler
+        <TextInput
           value="Text Value Description"
           guid="123-textarea"
           field="123-text"
@@ -32,7 +32,7 @@
       </div>
 
       <div class="col-xs-12 col-md-3">
-        <BooleanFieldHandler
+        <BooleanInput
           field="boolean_field"
           guid="1234"
           value="true"
@@ -44,7 +44,7 @@
 
     <div class="row">
       <div class="col-xs-12 col-md-3">
-        <StringFieldHandler
+        <StringInput
           label="String Input"
           value="String Value"
           guid="123-sstring-input"
@@ -53,7 +53,7 @@
         />
       </div>
       <div class="col-xs-12 col-md-3">
-        <PhoneFieldHandler
+        <PhoneInput
           label="Phone"
           value="+123 23132232"
           guid="123-phone"
@@ -62,7 +62,7 @@
         />
       </div>
       <div class="col-xs-12 col-md-3">
-        <IntegerFieldHandler
+        <IntegerInput
           label="Integer"
           field="integer_field"
           guid="123-integer"
@@ -71,7 +71,7 @@
         />
       </div>
       <div class="col-xs-12 col-md-3">
-        <EmailFieldHandler
+        <EmailInput
           label="Email"
           field="email_field"
           guid="123-email"
@@ -83,7 +83,7 @@
 
     <div class="row">
       <div class="col-xs-12 col-md-3">
-        <DecimalFieldHandler
+        <DecimalInput
           field="decimal_field"
           value="20.543"
           guid="123123-decimal"
@@ -92,7 +92,7 @@
         />
       </div>
       <div class="col-xs-12 col-md-3">
-        <DatetimeFieldHandler
+        <DatetimeInput
           field="datetime_field"
           value="2019-03-12 10:00:32"
           guid="123123-datetime"
@@ -102,7 +102,7 @@
       </div>
 
       <div class="col-xs-12 col-md-3">
-        <DateFieldHandler
+        <DateInput
           field="date_field"
           value="2020-05-15"
           guid="12323-date"
@@ -114,7 +114,7 @@
 
     <div class="row">
       <div class="col-xs-12 col-md-3">
-        <ListFieldHandler
+        <ListInput
           guid="123-list"
           field="list_field"
           label="List Label"
@@ -123,7 +123,7 @@
         />
       </div>
       <div class="col-xs-12 col-md-3">
-        <RelatedFieldHandler
+        <RelatedInput
           guid="123-related"
           field="related_field"
           source="test_source"
@@ -134,40 +134,38 @@
         />
       </div>
     </div>
-    <div class="col-xs-12 col-md-3">
-    </div>
   </div>
 </template>
 <script>
-import BooleanFieldHandler from '../src/components/Boolean.vue'
-import ListFieldHandler from '../src/components/List.vue'
-import RelatedFieldHandler from '../src/components/Related.vue'
-import DateFieldHandler from '../src/components/Date.vue'
-import DatetimeFieldHandler from '../src/components/Datetime.vue'
-import DecimalFieldHandler from '../src/components/Decimal.vue'
-import EmailFieldHandler from '../src/components/Email.vue'
-import IntegerFieldHandler from '../src/components/Integer.vue'
-import StringFieldHandler from '../src/components/String.vue'
-import PhoneFieldHandler from '../src/components/Phone.vue'
-import TextFieldHandler from '../src/components/Text.vue'
-import TimeFieldHandler from '../src/components/Time.vue'
-import UrlFieldHandler from '../src/components/Url.vue'
+import BooleanInput from '../src/components/BooleanInput.vue'
+import ListInput from '../src/components/ListInput.vue'
+import RelatedInput from '../src/components/RelatedInput.vue'
+import DateInput from '../src/components/DateInput.vue'
+import DatetimeInput from '../src/components/DatetimeInput.vue'
+import DecimalInput from '../src/components/DecimalInput.vue'
+import EmailInput from '../src/components/EmailInput.vue'
+import IntegerInput from '../src/components/IntegerInput.vue'
+import StringInput from '../src/components/StringInput.vue'
+import PhoneInput from '../src/components/PhoneInput.vue'
+import TextInput from '../src/components/TextInput.vue'
+import TimeInput from '../src/components/TimeInput.vue'
+import UrlInput from '../src/components/UrlInput.vue'
 
 export default {
   components: {
-    BooleanFieldHandler,
-    DateFieldHandler,
-    DatetimeFieldHandler,
-    DecimalFieldHandler,
-    EmailFieldHandler,
-    IntegerFieldHandler,
-    ListFieldHandler,
-    RelatedFieldHandler,
-    PhoneFieldHandler,
-    StringFieldHandler,
-    TextFieldHandler,
-    TimeFieldHandler,
-    UrlFieldHandler
+    BooleanInput,
+    DateInput,
+    DatetimeInput,
+    DecimalInput,
+    EmailInput,
+    IntegerInput,
+    ListInput,
+    RelatedInput,
+    PhoneInput,
+    StringInput,
+    TextInput,
+    TimeInput,
+    UrlInput
   },
   data () {
     return {

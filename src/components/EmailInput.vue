@@ -12,7 +12,7 @@
     </label>
     <input
       v-model="val"
-      type="url"
+      type="email"
       :class="[size]"
       class="form-control"
     >
@@ -22,6 +22,7 @@
 <script>
 
 export default {
+  name: 'EmailFieldHandler',
   props: {
     field: {
       type: String,

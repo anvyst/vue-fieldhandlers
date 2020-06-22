@@ -32,6 +32,7 @@ import * as $ from 'jquery'
 import timepicker from 'bootstrap-timepicker'
 
 export default {
+  name: 'TimeInput',
   props: {
     field: {
       type: String,

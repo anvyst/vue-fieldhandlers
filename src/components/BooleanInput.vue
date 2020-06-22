@@ -1,5 +1,8 @@
 <template>
-  <div class="form-group">
+  <div
+    :class="{'required': isRequired}"
+    class="form-group"
+  >
     <label
       v-if="label !== ''"
       :for="guid"
@@ -9,16 +12,18 @@
     </label>
     <input
       v-model="val"
-      type="number"
-      step="any"
-      max="99999999999"
-      :class="[size]"
-      class="form-control"
+      type="checkbox"
+      class="square"
     >
   </div>
 </template>
+
 <script>
+import $ from 'jquery'
+import icheck from 'icheck'
+
 export default {
+  name: 'BooleanInput',
   props: {
     field: {
       type: String,
@@ -29,15 +34,10 @@ export default {
       required: true
     },
     value: {
-      type: String,
-      default: ''
+      type: [String, Number],
+      default: 0
     },
     label: {
-      type: String,
-      default: '',
-      required: false
-    },
-    size: {
       type: String,
       default: '',
       required: false
@@ -50,13 +50,33 @@ export default {
   },
   data () {
     return {
-      val: this.value
+      val: +this.value
     }
   },
   watch: {
     val () {
       this.$emit('input-value-updated', this.field, this.guid, this.val)
     }
+  },
+  mounted () {
+    const self = this
+    const $input = $(this.$el).find('input')
+
+    $input.iCheck({
+      checkboxClass: 'icheckbox_square',
+      radioClass: 'iradio_square'
+    })
+
+    $input.on('ifChecked', function (e) {
+      self.val = 1
+    })
+
+    $input.on('ifUnchecked', function (e) {
+      self.val = 0
+    })
   }
 }
 </script>
+<style lang="css">
+  @import '~icheck/skins/square/_all.css';
+</style>

@@ -1,29 +1,29 @@
-import BooleanFieldHandler from './components/Boolean.vue'
-import DateFieldHandler from './components/Date.vue'
-import DatetimeFieldHandler from './components/Datetime.vue'
-import DecimalFieldHandler from './components/Decimal.vue'
-import EmailFieldHandler from './components/Email.vue'
-import IntegerFieldHandler from './components/Integer.vue'
-import ListFieldHandler from './components/List.vue'
-import PhoneFieldHandler from './components/Phone.vue'
-import RelatedFieldHandler from './components/Related.vue'
-import StringFieldHandler from './components/String.vue'
-import TextFieldHandler from './components/Text.vue'
-import TimeFieldHandler from './components/Time.vue'
-import UrlFieldHandler from './components/Url.vue'
+import BooleanInput from './components/BooleanInput.vue'
+import DateInput from './components/DateInput.vue'
+import DatetimeInput from './components/DatetimeInput.vue'
+import DecimalInput from './components/DecimalInput.vue'
+import EmailInput from './components/EmailInput.vue'
+import IntegerInput from './components/IntegerInput.vue'
+import ListInput from './components/ListInput.vue'
+import PhoneInput from './components/PhoneInput.vue'
+import RelatedInput from './components/RelatedInput.vue'
+import StringInput from './components/StringInput.vue'
+import TextInput from './components/TextInput.vue'
+import TimeInput from './components/TimeInput.vue'
+import UrlInput from './components/UrlInput.vue'
 
 export default {
-  BooleanFieldHandler,
-  DateFieldHandler,
-  DatetimeFieldHandler,
-  DecimalFieldHandler,
-  EmailFieldHandler,
-  IntegerFieldHandler,
-  ListFieldHandler,
-  PhoneFieldHandler,
-  RelatedFieldHandler,
-  StringFieldHandler,
-  TextFieldHandler,
-  TimeFieldHandler,
-  UrlFieldHandler
+  BooleanInput,
+  DateInput,
+  DatetimeInput,
+  DecimalInput,
+  EmailInput,
+  IntegerInput,
+  ListInput,
+  PhoneInput,
+  RelatedInput,
+  StringInput,
+  TextInput,
+  TimeInput,
+  UrlInput
 }

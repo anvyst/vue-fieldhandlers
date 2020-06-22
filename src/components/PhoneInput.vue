@@ -14,15 +14,16 @@
       :id="guid"
       v-model="val"
       :class="[size]"
-      type="number"
-      max="99999999999"
-      step="1"
+      type="tel"
       class="form-control"
     >
   </div>
 </template>
+
 <script>
+
 export default {
+  name: 'PhoneFieldHandler',
   props: {
     field: {
       type: String,
