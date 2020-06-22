@@ -31,6 +31,7 @@ import datepicker from 'bootstrap-datepicker'
 import { MAGIC_VALUE_WRAPPER } from '../utils/constants.js'
 
 export default {
+  name: 'DateInput',
   props: {
     field: {
       type: String,

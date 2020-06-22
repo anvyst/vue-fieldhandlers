@@ -23,6 +23,7 @@
 <script>
 
 export default {
+  name: 'PhoneFieldHandler',
   props: {
     field: {
       type: String,

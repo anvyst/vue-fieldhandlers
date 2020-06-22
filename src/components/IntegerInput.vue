@@ -14,16 +14,16 @@
       :id="guid"
       v-model="val"
       :class="[size]"
-      type="text"
+      type="number"
+      max="99999999999"
+      step="1"
       class="form-control"
     >
   </div>
 </template>
-
 <script>
-
 export default {
-  name: 'StringInput',
+  name: 'IntegerInput',
   props: {
     field: {
       type: String,
@@ -58,15 +58,9 @@ export default {
       val: this.value
     }
   },
-
   watch: {
     val () {
       this.$emit('input-value-updated', this.field, this.guid, this.val)
-    }
-  },
-  created () {
-    if (this.val) {
-     this.$emit('input-value-updated', this.field, this.guid, this.val)
     }
   }
 }

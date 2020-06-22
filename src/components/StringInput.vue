@@ -1,5 +1,8 @@
 <template>
-  <div class="form-group">
+  <div
+    :class="{'required': isRequired}"
+    class="form-group"
+  >
     <label
       v-if="label !== ''"
       :for="guid"
@@ -8,17 +11,19 @@
       {{ label }}
     </label>
     <input
+      :id="guid"
       v-model="val"
-      type="number"
-      step="any"
-      max="99999999999"
       :class="[size]"
+      type="text"
       class="form-control"
     >
   </div>
 </template>
+
 <script>
+
 export default {
+  name: 'StringInput',
   props: {
     field: {
       type: String,
@@ -56,6 +61,11 @@ export default {
   watch: {
     val () {
       this.$emit('input-value-updated', this.field, this.guid, this.val)
+    }
+  },
+  created () {
+    if (this.val) {
+     this.$emit('input-value-updated', this.field, this.guid, this.val)
     }
   }
 }
