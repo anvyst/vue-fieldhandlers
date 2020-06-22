@@ -152,7 +152,6 @@ import PhoneFieldHandler from '../src/components/Phone.vue'
 import TextFieldHandler from '../src/components/Text.vue'
 import TimeFieldHandler from '../src/components/Time.vue'
 import UrlFieldHandler from '../src/components/Url.vue'
-import countriesList from '../src/utils/countries.js'
 
 export default {
   components: {
@@ -183,7 +182,6 @@ export default {
     }
   },
   created () {
-    console.log(countriesList)
   }
 }
 </script>

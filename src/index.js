@@ -1,5 +1,6 @@
 import BooleanFieldHandler from './components/Boolean.vue'
 import DateFieldHandler from './components/Date.vue'
+import DatetimeFieldHandler from './components/Datetime.vue'
 import DecimalFieldHandler from './components/Decimal.vue'
 import EmailFieldHandler from './components/Email.vue'
 import IntegerFieldHandler from './components/Integer.vue'
@@ -14,6 +15,7 @@ import UrlFieldHandler from './components/Url.vue'
 export default {
   BooleanFieldHandler,
   DateFieldHandler,
+  DatetimeFieldHandler,
   DecimalFieldHandler,
   EmailFieldHandler,
   IntegerFieldHandler,
