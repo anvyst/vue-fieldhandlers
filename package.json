@@ -4,6 +4,7 @@
   "description": "VueJS FieldHandlers collection for Qobo templates",
   "main": "dist/vue-fieldhandlers.js",
   "scripts": {
+    "prepare": "npm run build",
     "watch": "webpack-dev-server --config ./build/webpack.dev.config.js --hot --progress -d",
     "build": "webpack --config ./build/webpack.prod.config.js --progress --hide-modules",
     "lint": "eslint --ext js --ext vue src",
