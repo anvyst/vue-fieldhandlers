@@ -10,7 +10,7 @@ module.exports = merge(base, {
   entry: './dev/dev.js',
   plugins: [
       new MiniCssExtractPlugin({
-        filename: 'style.css',
+        filename: 'vue-fieldhandlers.css',
       }),
       new HtmlWebpackPlugin({
         template: './dev/index.html',
