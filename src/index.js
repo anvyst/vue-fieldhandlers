@@ -12,7 +12,7 @@ import TextInput from './components/TextInput.vue'
 import TimeInput from './components/TimeInput.vue'
 import UrlInput from './components/UrlInput.vue'
 
-export default {
+export {
   BooleanInput,
   DateInput,
   DatetimeInput,
@@ -26,4 +26,22 @@ export default {
   TextInput,
   TimeInput,
   UrlInput
+}
+
+export default {
+  install (Vue, options) {
+    Vue.component('BooleanInput', BooleanInput)
+    Vue.component('DateInput', DateInput)
+    Vue.component('DatetimeInput', DatetimeInput)
+    Vue.component('DecimalInput', DecimalInput)
+    Vue.component('EmailInput', EmailInput)
+    Vue.component('IntegerInput', IntegerInput)
+    Vue.component('ListInput', ListInput)
+    Vue.component('PhoneInput', PhoneInput)
+    Vue.component('RelatedInput', RelatedInput)
+    Vue.component('StringInput', StringInput)
+    Vue.component('TextInput', TextInput)
+    Vue.component('TimeInput', TimeInput)
+    Vue.component('UrlInput', UrlInput)
+  }
 }
