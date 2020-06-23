@@ -32,7 +32,7 @@ import moment from 'moment'
 import { MAGIC_VALUE_WRAPPER } from '../utils/constants.js'
 
 export default {
-  name: 'DatetimeFieldHandler',
+  name: 'DatetimeInput',
   props: {
     field: {
       type: String,
