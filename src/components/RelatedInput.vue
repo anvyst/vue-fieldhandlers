@@ -50,7 +50,7 @@ import { MAGIC_VALUE_WRAPPER } from '../utils/constants.js'
 import UuidMixin from '../mixins/uuid.js'
 
 export default {
-  name: 'RelatedFieldHandler',
+  name: 'RelatedInput',
   components: {
     vSelect
   },

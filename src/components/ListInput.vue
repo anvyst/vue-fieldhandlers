@@ -37,7 +37,7 @@
 import vSelect from 'vue-select'
 
 export default {
-  name: 'ListFieldHandler',
+  name: 'ListInput',
   components: {
     vSelect
   },

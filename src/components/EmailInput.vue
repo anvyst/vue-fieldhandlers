@@ -22,7 +22,7 @@
 <script>
 
 export default {
-  name: 'EmailFieldHandler',
+  name: 'EmailInput',
   props: {
     field: {
       type: String,
